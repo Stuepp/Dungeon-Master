@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dungeon Master</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    
+    <body>
+        <header><h1>Dungeon Master</h1></header>
+        <div class="Screen">
+            <section class="Actions">
+                <button title="Monster Shop" onclick="OpenShop('MS')">Monsters</button>
+                    <div id="MS" class="MonsterShop">
+                        <button onclick="MonsterPlacement('slime')">Slime</button>
+                        <button onclick="MonsterPlacement('goblin')">Goblin</button>
+                        <button onclick="CloseShop('MS')">Exit</button>
+                    </div>
+                <button title="Traps Shop" onclick="OpenShop('TS')">Traps</button>
+                    <div id="TS" class="TrapShop">
+                        <button onclick="TrapPlacement('spikes')">Spikes</button>
+                        <button onclick="TrapPlacement('darts')">Darts</button>
+                        <button onclick="CloseShop('TS')">Exit</button>
+                    </div>
+                <button onclick="OpenShop('RS')">Rooms</button>
+                    <div id="RS" class="RoomsShop">
+                        <button onclick="RoomUnlock(1)">Room 1</button>
+                        <button onclick="RoomUnlock(2)">Room 2</button>
+                        <button onclick="RoomUnlock(3)">Room 3</button>
+                        <button onclick="RoomUnlock(4)">Room 4</button>
+                        <button onclick="CloseShop('RS')">Exit</button>
+                    </div>
+                <button title="Starts a Raid in your Dungeon" onclick="StartRaid()">Raid</button>
+            </section>
+            <aside id="GS" class="GameScreen">
+                
+            </aside>
+        </div>
+        <footer>
+            <table>
+                <tr>
+                    <th style="color: gold;">Money</th>
+                    <th style="color:turquoise;">Mana</th>
+                    <th style="color: tomato;">Infamy</th>
+                    <th style="color:yellow">Treasures</th>
+                </tr>
+                <tr>
+                    <td id="money" style="color: gold;">0</td>
+                    <td id="mana" style="color:turquoise;">0</td>
+                    <td id="infamy" style="color: tomato;">0</td>
+                    <td id="treasures" style="color:yellow">0</td>
+                </tr>
+            </table>
+        </footer>
+    </body>
+</html>

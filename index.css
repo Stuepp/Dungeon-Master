@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    background: none;
+}
+body{
+    background-color: #50566d;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+header{
+    margin-left: 500px;
+}
+.Screen{
+    display: flex;
+    display: -webkit-flex;
+}
+button:hover{
+    cursor: pointer;
+}
+.Actions button{
+    width: 150px;
+    height: 80px;
+    outline: none;
+    color: white;
+    font-size: large;
+    -webkit-flex: 1;
+    flex: 1;
+    display: grid;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 30px;
+}
+.Actions button:active{
+    transform: scale(0.9);
+    transition-duration: 0.4s;
+}
+.MonsterShop, .TrapShop, .RoomsShop{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.GameScreen{
+    margin: 3px;
+}
+.GameScreen img{
+    flex: 3;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    width: 1200px;
+    height: 500px;
+}
+footer{
+    margin-left: 450px;
+}
+footer th, td{
+    padding-left: 30px;
+}
+canvas{
+    background-image: url("Prototipo-Dungeon-1.png");
+}
